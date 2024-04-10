@@ -78,10 +78,8 @@ def display_animated_graph(selection):
     return animations[selection]
 
 
-app.run_server(debug=True)
-
-
-# In[ ]:
+if __name__ == "__main__":
+    app.run_server(debug=False)
 
 
 
