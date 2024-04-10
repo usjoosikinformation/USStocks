@@ -1,14 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
 
 app = Dash(__name__)
 server=app.sever
+
 
 app.layout = html.Div([
     html.H4('Animated GDP and population over decades'),
@@ -80,7 +75,5 @@ def display_animated_graph(selection):
 
 if __name__ == "__main__":
     app.run_server(debug=False)
-
-
 
 
