@@ -8,7 +8,7 @@ from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
 
 app = Dash(__name__)
-
+server=app.sever
 
 app.layout = html.Div([
     html.H4('Animated GDP and population over decades'),
